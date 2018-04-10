@@ -6,22 +6,24 @@ def second_supply_for_fourth_of_july(hash)
 
    end
 
+   def add_supply_to_winter_holidays(holiday_hash, supply)
 
 
-def add_supply_to_winter_holidays(holiday_hash, supply)
 
- holiday_hash.each do |key|
 
-   key.each do |holiday, supplies|
+        holiday_hash[:winter].each do |holiday, supplies|
 
-     supplies << supply
 
-   end
+          puts supplies << supply
 
- end
+         end
 
-end
 
+
+
+
+   holiday_hash
+  end
 
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
