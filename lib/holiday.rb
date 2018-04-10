@@ -10,10 +10,10 @@ def second_supply_for_fourth_of_july(hash)
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
 
- holiday_hash.each do |key, value| 
-   
+ holiday_hash.each do |key, value|
+
   [:key] << supply
-end 
+end
 
 end
 
