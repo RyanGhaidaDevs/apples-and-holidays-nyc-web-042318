@@ -57,19 +57,19 @@ holiday_hash.each do |season, season_data|
  puts "#{season.to_s.capitalize!}:"
 
 season_data.each do |holiday, supply|
- 
+
   array = holiday.to_s.split("_")
-  
+
   final_holiday = []
-  
+
      array.each do |x|
-       
+
        final_holiday << x.capitalize!
-       
+
      end
-     
+
    holiday = final_holiday.join(" ")
-   
+
    supply = supply.join(", ")
    puts "  #{holiday}: #{supply}"
 
