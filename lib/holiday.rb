@@ -23,18 +23,24 @@ def second_supply_for_fourth_of_july(hash)
 
 def add_supply_to_memorial_day(holiday_hash, supply)
 
-  holiday_hash[:spring].each do |holiday, supplies| 
-        
-        
+  holiday_hash[:spring].each do |holiday, supplies|
+
+
         puts supplies << supply
-         
-       end 
+
+       end
 
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  # code here
-  # remember to return the updated hash
+
+  def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+
+  holiday_hash[season] = holiday_name 
+ 
+    holiday_hash[holiday_name] = supply_array
+  
+end
 
 end
 
